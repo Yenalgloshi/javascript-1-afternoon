@@ -6,28 +6,32 @@
 //plus the value of the name parameter.
 
 //Code here
-
+function greeting(name){
+  return "Hello, " + name;
+};
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
-
+var newGreeting = function (name){
+  return "Hello, " + name;
+}
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
 //Code Here
-
+var finalGreeting = (name) => "Hello, " + name;
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
-
+var groceries = ["apples", "milk", "eggs", "bread"]
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
 
@@ -35,6 +39,14 @@
 //doubleCheck should return the array.
 
 //Code Here
+function doubleCheck(groceries){
+  var x = groceries.indexOf("chocolate")
+  if(x != "chocolate"){
+    groceries.push("chocolate")
+    };
+  return groceries;
+};
+
 
 //////////////////PROBLEM 5////////////////////
 
@@ -44,21 +56,30 @@
 //and goodBoy (a boolean).
 
 //Code Here
+var dog={
+    name:"Fido",
+    color:"black",
+    age:5,
+    goodBoy:true
+  };
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
 
+var devMountainClassPet = dog.name;
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
 //Code Here
-
+dog.bark = function (){
+  return "Woof woof";
+}
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
-
+var ruff = dog.bark();
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
